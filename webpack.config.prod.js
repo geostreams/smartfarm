@@ -1,21 +1,25 @@
 // @flow
 const Webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
-const prodConfigBase = require('../webpack.config.prod');
 const commonConfig = require('./webpack.config.common');
 
 module.exports = webpackMerge.merge(
-    prodConfigBase,
     commonConfig,
     {
+        mode: 'production',
+        devtool: 'source-map',
+
+        optimization: {
+            minimize: true
+        },
         plugins: [
             new Webpack.DefinePlugin({
                 'process.env.NODE_ENV': '"production"',
-                'process.env.GEOSERVER_URL': JSON.stringify(process.env.GEOSERVER_URL || 'https://smartfarm.ncsa.illinois.edu/geoserver'),
-                'process.env.GEOSTREAMS_URL': JSON.stringify(process.env.GEOSTREAMS_URL || '/geostreams')
-                
-            })
+                'process.env.GEOSTREAMS_URL': JSON.stringify(process.env.GEOSERVER_URL || '/geostreams')
+            }),
+            new OptimizeCssAssetsPlugin()
         ]
     }
 );

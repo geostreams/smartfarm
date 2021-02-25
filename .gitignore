@@ -1,0 +1,11 @@
+.idea/
+.DS_Store
+*-compiled.js
+*-compiled.js.map
+yarn-error.log
+npm-debug.log
+lerna-debug.log
+/tmp
+build
+node_modules
+package-lock.json
