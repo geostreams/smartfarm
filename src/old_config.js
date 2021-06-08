@@ -278,7 +278,7 @@ export const gd3 = {
     clustersExpandMaxNumberFeatures: 50,
     mapMaxZoom: 17,
     mapMinZoom: 5.5,
-    mapCenterValue: [-90.498703, 37.9203417],
+    mapCenterValue: [-88.293265,40.003557],
     mapPopupZoomMax: 16
 };
 // ATTENTION: don't add semicolon at the end of this config. config.js on production will wrap this with additional {}

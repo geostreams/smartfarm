@@ -1,8 +1,8 @@
 // @flow
-import geostreamingReducers from 'gd-geostreaming/src/reducers';
+import geostreamingReducers from '@geostreams/geostreaming/src/reducers';
 
 // $FlowFixMe
-import __old_reducers from 'gd-core__old/app/reducers';
+import __old_reducers from '@geostreams/core__old/app/reducers';
 
 export default {
     ...__old_reducers,

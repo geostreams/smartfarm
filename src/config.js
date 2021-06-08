@@ -1,7 +1,8 @@
 export default {
     map: {
         clusterExpandCountThreshold: 10,
-        clusterExpandZoomThreshold: 12
+        clusterExpandZoomThreshold: 12,
+        center: [-26831023.78,4453175.60]
     },
     geostreamingEndpoint: process.env.GEOSTREAMS_URL,
     sensors: {

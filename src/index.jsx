@@ -1,11 +1,11 @@
 // @flow
-import render from 'gd-core/src/render';
+import render from '@geostreams/core/src/render';
 
 // $FlowFixMe
-import { addEndpoints, fetchSensors as __old_fetchSensors } from 'gd-core__old/app/actions';
-import { updateGeoStreamingConfig } from 'gd-geostreaming/src/actions/config';
-import { fetchParameters } from 'gd-geostreaming/src/actions/parameters';
-import { fetchSensors } from 'gd-geostreaming/src/actions/sensors';
+import { addEndpoints, fetchSensors as __old_fetchSensors } from '@geostreams/core__old/app/actions';
+import { updateGeoStreamingConfig } from '@geostreams/geostreaming/src/actions/config';
+import { fetchParameters } from '@geostreams/geostreaming/src/actions/parameters';
+import { fetchSensors } from '@geostreams/geostreaming/src/actions/sensors';
 import routes from './routes';
 import reducers from './reducers';
 

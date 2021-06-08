@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import BaseTests from 'gd-core/src/tests/BaseTests';
+import BaseTests from '@geostreams/core/src/tests/BaseTests';
 
 const tests = [];
 
