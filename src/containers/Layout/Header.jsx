@@ -12,45 +12,47 @@ import {
 } from '@material-ui/core';
 import LogoApp from '../../images/logo.png';
 
-export const HEADERS_HEIGHT = 61;
+export const HEADERS_HEIGHT = 62;
 
-const useStyles = makeStyles((theme) =>{
-    return ({
-        mainHeader: {
-            'background': theme.palette.primary.main,
-            'color': theme.palette.primary.contrastText,
-            'textDecoration': 'none',
-            'height': HEADERS_HEIGHT,
-            'minHeight': HEADERS_HEIGHT,
-            '& a': {
-                margin: 5
-            }
+const useStyles = makeStyles((theme) =>({
+    appbar: {
+        zIndex: theme.zIndex.drawer + 1
+    },
+    mainHeader: {
+        'background': theme.palette.primary.main,
+        'color': theme.palette.primary.contrastText,
+        'textDecoration': 'none',
+        'height': HEADERS_HEIGHT,
+        'minHeight': HEADERS_HEIGHT,
+        '& a': {
+            margin: 5
         },
-        headerText: {
-            color: theme.palette.primary.contrastText,
-            textDecoration: 'none'
-        },
-        tabsRoot: {
-            fontSize: 16,
-            flexGrow: 1
-        },
-        tabsIndicator: {
-            backgroundColor: '#fff'
-        },
-        tabRoot: {
-            fontSize: '1rem'
-        },
-        marginLeftAuto: {
-            marginLeft: 'auto !important'
-        },
-        dropdown: {
-            zIndex: 1100
-        },
-        dropdownIcon: {
-            display: 'flex'
-        }
-    });
-});
+        'zIndex': 1400
+    },
+    headerText: {
+        color: theme.palette.primary.contrastText,
+        textDecoration: 'none'
+    },
+    tabsRoot: {
+        fontSize: 16,
+        flexGrow: 1
+    },
+    tabsIndicator: {
+        backgroundColor: '#fff'
+    },
+    tabRoot: {
+        fontSize: '1rem'
+    },
+    marginLeftAuto: {
+        marginLeft: 'auto !important'
+    },
+    dropdown: {
+        zIndex: 1100
+    },
+    dropdownIcon: {
+        display: 'flex'
+    }
+}));
 
 type Props = {
     location: {
@@ -62,7 +64,7 @@ const Header = ({ location }: Props) => {
     const classes = useStyles();
 
     return (
-        <AppBar position="fixed">
+        <AppBar position="fixed" className={classes.appbar}>
             <Toolbar className={classes.mainHeader}>
                 <Avatar
                     variant='square'
