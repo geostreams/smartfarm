@@ -1,6 +1,6 @@
 FROM node:14 as build
 
-ARG GEODASHBOARD_VERSION=master
+ARG GEODASHBOARD_VERSION=v3.8.0
 ARG CONTEXT=/
 #ARG GEOSTREAMS_URL=https://cinet.141.142.216.39.nip.io/geostreams
 
@@ -22,6 +22,6 @@ FROM nginx:stable-alpine
 RUN rm /etc/nginx/conf.d/default.conf
 COPY docker/nginx.conf /etc/nginx/conf.d
 
-COPY --from=build /tmp/smartfarm/build /usr/share/nginx/html/
+COPY --from=build /tmp/smartfarm/build /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
