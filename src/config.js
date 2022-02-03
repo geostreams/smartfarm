@@ -10,7 +10,7 @@ export default {
             'Research Region':[
                 {
                     title: 'Research Region',
-                    id: '602d9528e4b0b7c798c8212e:research-region.zip_602d954fe4b0b7c798c82134',
+                    id: 'manual:research-region',
                     wms: `${process.env.GEOSERVER_URL}/wms`,
                     opacity: 0.80,
                     visibility: false,
@@ -19,14 +19,14 @@ export default {
                     legendTitle: 'Opacity',
                     legendText: '',
                     legendImage: `${process.env.GEOSERVER_URL}/wms?request=GetMap&` +
-                'layers=602d9528e4b0b7c798c8212e:research-region.zip_602d954fe4b0b7c798c82134&bbox=-9828873.095744213,4848513.033479578,-9812933.65369004,4867025.709042344&' +
+                'layers=manual:research-region&bbox=-9828873.095744213,4848513.033479578,-9812933.65369004,4867025.709042344&' +
                 'width=640&height=480&srs=EPSG:3857&format=image%2Fpng'
                 }
             ],
             'Satellite Multispectral Image SR':[
                 {
                     title: 'SR 09-30-2020',
-                    id: '601d8c3fe4b0affc633634ad:SatelliteImage.Reifsteck.2020.09.30.SR.tif_601d8d40e4b0affc63363757 ',
+                    id: 'manual:SatelliteImage.Reifsteck.2020.09.30.SR',
                     wms: `${process.env.GEOSERVER_URL}/wms`,
                     opacity: 0.80,
                     visibility: false,
@@ -34,14 +34,14 @@ export default {
                     legendStartOpen: false,
                     legendTitle: 'Opacity',
                     legendText: '',
-                    legendImage: `${process.env.GEOSERVER_URL}wms?request=GetMap&` +
-                'layers=601d8c3fe4b0affc633634ad:SatelliteImage.Reifsteck.2020.09.30.SR.tif_601d8d40e4b0affc63363757&' +
+                    legendImage: `${process.env.GEOSERVER_URL}/wms?request=GetMap&` +
+                'layers=manual:SatelliteImage.Reifsteck.2020.09.30.SR&' +
                 'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
                 '&width=640&height=480&srs=EPSG:3857&format=image%2Fpng'
                 },
                 {
                     title: 'SR 09-01-2020',
-                    id: '601d8c3fe4b0affc633634ad:SatelliteImage.Reifsteck.2020.09.01.SR.tif_601d8d40e4b0affc633636fd',
+                    id: 'manual:SatelliteImage.Reifsteck.2020.09.01.SR',
                     wms: `${process.env.GEOSERVER_URL}/wms`,
                     opacity: 0.80,
                     visibility: false,
@@ -49,8 +49,8 @@ export default {
                     legendStartOpen: false,
                     legendTitle: 'Opacity',
                     legendText: '',
-                    legendImage: `${process.env.GEOSERVER_URL}wms?request=GetMap&` +
-                'layers=601d8c3fe4b0affc633634ad:SatelliteImage.Reifsteck.2020.09.01.SR.tif_601d8d40e4b0affc633636fd&' +
+                    legendImage: `${process.env.GEOSERVER_URL}/wms?request=GetMap&` +
+                'layers=manual:SatelliteImage.Reifsteck.2020.09.01.SR&' +
                 'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
                 '&width=640&height=480&srs=EPSG:3857&format=image%2Fpng'
                 }
@@ -58,7 +58,7 @@ export default {
             'Satellite Multispectral Image NDVI': [
                 {
                     title: 'NDVI 09-30-2020',
-                    id: '601d8dcde4b0affc633642ac:SatelliteImage.Reifsteck.2020.09.30.NDVI.tif_601d8e4de4b0affc6336476b',
+                    id: 'manual:SatelliteImage.Reifsteck.2020.09.30.NDVI',
                     wms: `${process.env.GEOSERVER_URL}/wms`,
                     opacity: 0.80,
                     visibility: false,
@@ -66,14 +66,14 @@ export default {
                     legendStartOpen: false,
                     legendTitle: 'Opacity',
                     legendText: '',
-                    legendImage: `${process.env.GEOSERVER_URL}wms?request=GetMap&` +
-                'layers=601d8dcde4b0affc633642ac:SatelliteImage.Reifsteck.2020.09.30.NDVI.tif_601d8e4de4b0affc6336476b&' +
+                    legendImage: `${process.env.GEOSERVER_URL}/wms?request=GetMap&` +
+                'layers=manual:SatelliteImage.Reifsteck.2020.09.30.NDVI&' +
                 'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
                 '&width=640&height=480&srs=EPSG:3857&format=image%2Fpng'
                 },
                 {
                     title: 'NDVI 09-01-2020',
-                    id: '601d8dcde4b0affc633642ac:SatelliteImage.Reifsteck.2020.09.01.NDVI.tif_601d8e4de4b0affc6336471f',
+                    id: 'manual:SatelliteImage.Reifsteck.2020.09.01.NDVI',
                     wms: `${process.env.GEOSERVER_URL}/wms`,
                     opacity: 0.80,
                     visibility: false,
@@ -81,10 +81,10 @@ export default {
                     legendStartOpen: false,
                     legendTitle: 'Opacity',
                     legendText: '',
-                    legend: '/wms?request=GetMap&' +
-                'layers=601d8dcde4b0affc633642ac:SatelliteImage.Reifsteck.2020.09.01.NDVI.tif_601d8e4de4b0affc6336471f&' +
+                    legendImage: `${process.env.GEOSERVER_URL}/wms?request=GetMap&` +
+                'layers=manual:SatelliteImage.Reifsteck.2020.09.01.NDVI&' +
                 'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
-                '&width=640&height=480&srs=EPSG:3857&format=image%2Fpng'
+                `&width=640&height=480&srs=EPSG:3857&format=image%2Fpng`
                 }
             ]
         }
