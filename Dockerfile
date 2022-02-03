@@ -1,10 +1,13 @@
 FROM node:14 as build
 
-ARG GEODASHBOARD_VERSION=v3.8.0
+ARG GEODASHBOARD_VERSION=fix/router-basename
 ARG CONTEXT=/
+ARG GEOSTREAMS_URL=https://smartfarm.ncsa.illinois.edu/geostreams
+ARG GEOSERVER_URL=https://smartfarm.ncsa.illinois.edu/geoserver
 
 ENV CONTEXT=$CONTEXT
-#ENV GEOSTREAMS_URL=$GEOSTREAMS_URL
+ENV GEOSTREAMS_URL=$GEOSTREAMS_URL
+ENV GEOSERVER_URL=$GEOSERVER_URL
 
 RUN git clone https://github.com/geostreams/geodashboard.git /tmp/geodashboard
 WORKDIR /tmp/geodashboard
