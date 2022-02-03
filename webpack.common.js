@@ -161,11 +161,15 @@ module.exports = {
             'redux': path.resolve('./node_modules/redux'),
             'react-router-dom': path.resolve('./node_modules/react-router-dom'),
             'react-redux': path.resolve('./node_modules/react-redux'),
-            '@material-ui': path.resolve('./node_modules/@material-ui')
+            '@material-ui': path.resolve('./node_modules/@material-ui'),
+            'process': path.resolve('./node_modules/process')
         }
     },
 
     plugins: [
+        new Webpack.ProvidePlugin({
+            process: 'process/browser'
+        }),
         new Webpack.DefinePlugin({
             'process.env.VERSION': JSON.stringify(
                 dependencies['@geostreams/core']

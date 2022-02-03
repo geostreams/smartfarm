@@ -7,8 +7,8 @@ ARG CONTEXT=/
 ENV CONTEXT=$CONTEXT
 #ENV GEOSTREAMS_URL=$GEOSTREAMS_URL
 
-RUN git clone https://github.com/geostreams/geodashboard.git /tmp/smartfarm
-WORKDIR /tmp/smartfarm
+RUN git clone https://github.com/geostreams/geodashboard.git /tmp/geodashboard
+WORKDIR /tmp/geodashboard
 RUN git checkout $GEODASHBOARD_VERSION
 RUN yarn && yarn link:all
 
@@ -22,6 +22,6 @@ FROM nginx:stable-alpine
 RUN rm /etc/nginx/conf.d/default.conf
 COPY docker/nginx.conf /etc/nginx/conf.d
 
-COPY --from=build /tmp/smartfarm/build /usr/share/nginx/html/geodashboard
+COPY --from=build /tmp/smartfarm/build /usr/share/nginx/html/
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
