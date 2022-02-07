@@ -1,5 +1,6 @@
 export default {
     map: {
+        geoserverUrl: process.env.GEOSERVER_URL,
         useCluster: false,
         clusterDistance: 45,
         maxZoom: 17,
@@ -11,14 +12,8 @@ export default {
                 {
                     title: 'Research Region',
                     id: 'manual:research-region',
-                    wms: `${process.env.GEOSERVER_URL}/wms`,
-                    opacity: 0.80,
-                    visibility: false,
-                    legendShow: true,
-                    legendStartOpen: false,
-                    legendTitle: 'Opacity',
-                    legendText: '',
-                    legendImage: `${process.env.GEOSERVER_URL}/wms?request=GetMap&` +
+                    type: 'wms',
+                    legendImage: '/wms?request=GetMap&' +
                 'layers=manual:research-region&bbox=-9828873.095744213,4848513.033479578,-9812933.65369004,4867025.709042344&' +
                 'width=640&height=480&srs=EPSG:3857&format=image%2Fpng'
                 }
@@ -27,14 +22,8 @@ export default {
                 {
                     title: 'SR 09-30-2020',
                     id: 'manual:SatelliteImage.Reifsteck.2020.09.30.SR',
-                    wms: `${process.env.GEOSERVER_URL}/wms`,
-                    opacity: 0.80,
-                    visibility: false,
-                    legendShow: true,
-                    legendStartOpen: false,
-                    legendTitle: 'Opacity',
-                    legendText: '',
-                    legendImage: `${process.env.GEOSERVER_URL}/wms?request=GetMap&` +
+                    type: 'wms',
+                    legendImage: '/wms?request=GetMap&' +
                 'layers=manual:SatelliteImage.Reifsteck.2020.09.30.SR&' +
                 'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
                 '&width=640&height=480&srs=EPSG:3857&format=image%2Fpng'
@@ -42,14 +31,8 @@ export default {
                 {
                     title: 'SR 09-01-2020',
                     id: 'manual:SatelliteImage.Reifsteck.2020.09.01.SR',
-                    wms: `${process.env.GEOSERVER_URL}/wms`,
-                    opacity: 0.80,
-                    visibility: false,
-                    legendShow: true,
-                    legendStartOpen: false,
-                    legendTitle: 'Opacity',
-                    legendText: '',
-                    legendImage: `${process.env.GEOSERVER_URL}/wms?request=GetMap&` +
+                    type: 'wms',
+                    legendImage: '/wms?request=GetMap&' +
                 'layers=manual:SatelliteImage.Reifsteck.2020.09.01.SR&' +
                 'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
                 '&width=640&height=480&srs=EPSG:3857&format=image%2Fpng'
@@ -59,14 +42,8 @@ export default {
                 {
                     title: 'NDVI 09-30-2020',
                     id: 'manual:SatelliteImage.Reifsteck.2020.09.30.NDVI',
-                    wms: `${process.env.GEOSERVER_URL}/wms`,
-                    opacity: 0.80,
-                    visibility: false,
-                    legendShow: true,
-                    legendStartOpen: false,
-                    legendTitle: 'Opacity',
-                    legendText: '',
-                    legendImage: `${process.env.GEOSERVER_URL}/wms?request=GetMap&` +
+                    type: 'wms',
+                    legendImage: '/wms?request=GetMap&' +
                 'layers=manual:SatelliteImage.Reifsteck.2020.09.30.NDVI&' +
                 'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
                 '&width=640&height=480&srs=EPSG:3857&format=image%2Fpng'
@@ -74,14 +51,8 @@ export default {
                 {
                     title: 'NDVI 09-01-2020',
                     id: 'manual:SatelliteImage.Reifsteck.2020.09.01.NDVI',
-                    wms: `${process.env.GEOSERVER_URL}/wms`,
-                    opacity: 0.80,
-                    visibility: false,
-                    legendShow: true,
-                    legendStartOpen: false,
-                    legendTitle: 'Opacity',
-                    legendText: '',
-                    legendImage: `${process.env.GEOSERVER_URL}/wms?request=GetMap&` +
+                    type: 'wms',
+                    legendImage: '/wms?request=GetMap&' +
                 'layers=manual:SatelliteImage.Reifsteck.2020.09.01.NDVI&' +
                 'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
                 `&width=640&height=480&srs=EPSG:3857&format=image%2Fpng`

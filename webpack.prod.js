@@ -17,8 +17,9 @@ module.exports = webpackMerge.merge(commonConfig, {
         new Webpack.DefinePlugin({
             'process.env.NODE_ENV': '"production"',
             'process.env.GEOSTREAMS_URL': JSON.stringify(
-                process.env.GEOSERVER_URL || '/geostreams'
-            )
+                process.env.GEOSTREAMS_URL || '/geostreams'
+            ),
+            'process.env.GEOSERVER_URL': JSON.stringify(process.env.GEOSERVER_URL || 'https://smartfarm.ncsa.illinois.edu/geoserver'),
         })
     ]
 });
