@@ -1,6 +1,6 @@
 FROM node:14 as build
 
-ARG GEODASHBOARD_VERSION=fix/router-basename
+ARG GEODASHBOARD_VERSION=main
 ARG CONTEXT=/
 ARG GEOSTREAMS_URL=https://smartfarm.ncsa.illinois.edu/geostreams
 ARG GEOSERVER_URL=https://smartfarm.ncsa.illinois.edu/geoserver
