@@ -57,6 +57,162 @@ export default {
                 'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
                 `&width=640&height=480&srs=EPSG:3857&format=image%2Fpng`
                 }
+            ],
+            'DK Group':[
+                {
+                    title: 'B_CEC_meq_100g_RS_2020',
+                    id: 'B_CEC_meq_100g_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: ''
+                },
+                {
+                    title: 'T_SoilpH_RS_2020',
+                    id: 'T_SoilpH_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: ''
+                },
+                {
+                    title: 'B_MC_g_g_RS_2020',
+                    id: 'B_MC_g_g_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: ''
+                },
+                {
+                    title: 'B_OM_RS_2020',
+                    id: 'B_OM_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: ''
+                },
+                {
+                    title: 'B_SoilpH_RS_2020',
+                    id: 'B_SoilpH_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: ''
+                },
+                {
+                    title: 'M_CEC_meq_100g_RS_2020',
+                    id: 'M_CEC_meq_100g_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: ''
+                },
+                {
+                    title: 'M_MC_g_g_RS_2020',
+                    id: 'M_MC_g_g_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: ''
+                },
+                {
+                    title: 'M_OM_RS_2020',
+                    id: 'M_OM_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: ''
+                },
+                {
+                    title: 'M_SOC_RS_2020',
+                    id: 'M_SOC_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: ''
+                },
+                {
+                    title: 'M_SoilpH_RS_2020',
+                    id: 'M_SoilpH_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: ''
+                },
+                {
+                    title: 'T_CEC_meq_100g_RS_2020',
+                    id: 'T_CEC_meq_100g_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: ''
+                },
+                {
+                    title: 'T_MC_g_g_RS_2020',
+                    id: 'T_MC_g_g_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: ''
+                },
+                {
+                    title: 'T_OM_RS_2020',
+                    id: 'T_OM_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: ''
+                },
+                {
+                    title: 'T_SOC_RS_2020',
+                    id: 'T_SOC_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: ''
+                }
             ]
         }
     },
