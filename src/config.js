@@ -13,13 +13,13 @@ export default {
                     title: 'Research Region',
                     id: 'manual:research-region',
                     type: 'wms',
-                    legendImage: '/wms?request=GetLegendGraphic&layer=manual:research-region&format=image%2Fpng'
+                    legend: 'wms?request=GetLegendGraphic&layer=manual:research-region&format=image%2Fpng'
                 },
                 {
                     title: 'Research Region test',
                     id: 'manual:research-region',
                     type: 'wms',
-                    legendImage: '/wms?request=GetLegendGraphic&layer=manual:research-region&format=image%2Fpng'
+                    legend: 'wms?request=GetLegendGraphic&layer=manual:research-region&format=image%2Fpng'
                 }
             ],
             'Satellite Multispectral Image SR':[
