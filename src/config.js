@@ -58,61 +58,21 @@ export default {
                 `&width=640&height=480&srs=EPSG:3857&format=image%2Fpng`
                 }
             ],
-            'DK Group':[
+            'Cation Exchange Capacity (meg/100g)':[
                 {
-                    title: 'B_CEC_meq_100g_RS_2020',
-                    id: 'B_CEC_meq_100g_RS_2020',
+                    title: 'T_CEC_meq_100g_RS_2020',
+                    id: 'T_CEC_meq_100g_RS_2020',
                     wms: `${process.env.GEOSERVER_URL}/wms`,
                     opacity: 0.80,
                     visibility: false,
                     legendShow: true,
                     legendStartOpen: false,
                     legendTitle: 'Opacity',
-                    legendText: ''
-                },
-                {
-                    title: 'T_SoilpH_RS_2020',
-                    id: 'T_SoilpH_RS_2020',
-                    wms: `${process.env.GEOSERVER_URL}/wms`,
-                    opacity: 0.80,
-                    visibility: false,
-                    legendShow: true,
-                    legendStartOpen: false,
-                    legendTitle: 'Opacity',
-                    legendText: ''
-                },
-                {
-                    title: 'B_MC_g_g_RS_2020',
-                    id: 'B_MC_g_g_RS_2020',
-                    wms: `${process.env.GEOSERVER_URL}/wms`,
-                    opacity: 0.80,
-                    visibility: false,
-                    legendShow: true,
-                    legendStartOpen: false,
-                    legendTitle: 'Opacity',
-                    legendText: ''
-                },
-                {
-                    title: 'B_OM_RS_2020',
-                    id: 'B_OM_RS_2020',
-                    wms: `${process.env.GEOSERVER_URL}/wms`,
-                    opacity: 0.80,
-                    visibility: false,
-                    legendShow: true,
-                    legendStartOpen: false,
-                    legendTitle: 'Opacity',
-                    legendText: ''
-                },
-                {
-                    title: 'B_SoilpH_RS_2020',
-                    id: 'B_SoilpH_RS_2020',
-                    wms: `${process.env.GEOSERVER_URL}/wms`,
-                    opacity: 0.80,
-                    visibility: false,
-                    legendShow: true,
-                    legendStartOpen: false,
-                    legendTitle: 'Opacity',
-                    legendText: ''
+                    legendText: '',
+                    legendImage: '/wms?request=GetMap&' +
+                        'layers=manual:T_CEC_meq_100g_RS_2020&' +
+                        'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
+                        `&width=640&height=480&srs=EPSG:3857&format=image%2Fpng`
                 },
                 {
                     title: 'M_CEC_meq_100g_RS_2020',
@@ -123,7 +83,43 @@ export default {
                     legendShow: true,
                     legendStartOpen: false,
                     legendTitle: 'Opacity',
-                    legendText: ''
+                    legendText: '',
+                    legendImage: '/wms?request=GetMap&' +
+                        'layers=manual:M_CEC_meq_100g_RS_2020&' +
+                        'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
+                        `&width=640&height=480&srs=EPSG:3857&format=image%2Fpng`
+                },
+                {
+                    title: 'B_CEC_meq_100g_RS_2020',
+                    id: 'B_CEC_meq_100g_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: '',
+                    legendImage: '/wms?request=GetMap&' +
+                        'layers=manual:B_CEC_meq_100g_RS_2020&' +
+                        'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
+                        `&width=640&height=480&srs=EPSG:3857&format=image%2Fpng`
+                }
+            ],
+            'Moisture Content (g/g)':[
+                {
+                    title: 'T_MC_g_g_RS_2020',
+                    id: 'T_MC_g_g_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: '',
+                    legendImage: '/wms?request=GetMap&' +
+                        'layers=manual:T_MC_g_g_RS_2020&' +
+                        'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
+                        `&width=640&height=480&srs=EPSG:3857&format=image%2Fpng`
                 },
                 {
                     title: 'M_MC_g_g_RS_2020',
@@ -134,7 +130,43 @@ export default {
                     legendShow: true,
                     legendStartOpen: false,
                     legendTitle: 'Opacity',
-                    legendText: ''
+                    legendText: '',
+                    legendImage: '/wms?request=GetMap&' +
+                        'layers=manual:M_MC_g_g_RS_2020&' +
+                        'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
+                        `&width=640&height=480&srs=EPSG:3857&format=image%2Fpng`
+                },
+                {
+                    title: 'B_MC_g_g_RS_2020',
+                    id: 'B_MC_g_g_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: '',
+                    legendImage: '/wms?request=GetMap&' +
+                        'layers=manual:B_MC_g_g_RS_2020&' +
+                        'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
+                        `&width=640&height=480&srs=EPSG:3857&format=image%2Fpng`
+                }
+            ],
+            'Organic Matter (%)':[
+                {
+                    title: 'T_OM_RS_2020',
+                    id: 'T_OM_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: '',
+                    legendImage: '/wms?request=GetMap&' +
+                        'layers=manual:T_OM_RS_2020&' +
+                        'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
+                        `&width=640&height=480&srs=EPSG:3857&format=image%2Fpng`
                 },
                 {
                     title: 'M_OM_RS_2020',
@@ -145,7 +177,43 @@ export default {
                     legendShow: true,
                     legendStartOpen: false,
                     legendTitle: 'Opacity',
-                    legendText: ''
+                    legendText: '',
+                    legendImage: '/wms?request=GetMap&' +
+                        'layers=manual:M_OM_RS_2020&' +
+                        'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
+                        `&width=640&height=480&srs=EPSG:3857&format=image%2Fpng`
+                },
+                {
+                    title: 'B_OM_RS_2020',
+                    id: 'B_OM_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: '',
+                    legendImage: '/wms?request=GetMap&' +
+                        'layers=manual:B_OM_RS_2020&' +
+                        'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
+                        `&width=640&height=480&srs=EPSG:3857&format=image%2Fpng`
+                }
+            ],
+            'Soil Organic Carbon (%)':[
+                {
+                    title: 'T_SOC_RS_2020',
+                    id: 'T_SOC_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: '',
+                    legendImage: '/wms?request=GetMap&' +
+                        'layers=manual:T_SOC_RS_2020&' +
+                        'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
+                        `&width=640&height=480&srs=EPSG:3857&format=image%2Fpng`
                 },
                 {
                     title: 'M_SOC_RS_2020',
@@ -156,7 +224,28 @@ export default {
                     legendShow: true,
                     legendStartOpen: false,
                     legendTitle: 'Opacity',
-                    legendText: ''
+                    legendText: '',
+                    legendImage: '/wms?request=GetMap&' +
+                        'layers=manual:M_SOC_RS_2020&' +
+                        'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
+                        `&width=640&height=480&srs=EPSG:3857&format=image%2Fpng`
+                }
+            ],
+            'Soil pH':[
+                {
+                    title: 'T_SoilpH_RS_2020',
+                    id: 'T_SoilpH_RS_2020',
+                    wms: `${process.env.GEOSERVER_URL}/wms`,
+                    opacity: 0.80,
+                    visibility: false,
+                    legendShow: true,
+                    legendStartOpen: false,
+                    legendTitle: 'Opacity',
+                    legendText: '',
+                    legendImage: '/wms?request=GetMap&' +
+                        'layers=manual:T_SoilpH_RS_2020&' +
+                        'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
+                        `&width=640&height=480&srs=EPSG:3857&format=image%2Fpng`
                 },
                 {
                     title: 'M_SoilpH_RS_2020',
@@ -167,51 +256,26 @@ export default {
                     legendShow: true,
                     legendStartOpen: false,
                     legendTitle: 'Opacity',
-                    legendText: ''
+                    legendText: '',
+                    legendImage: '/wms?request=GetMap&' +
+                        'layers=manual:M_SoilpH_RS_2020&' +
+                        'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
+                        `&width=640&height=480&srs=EPSG:3857&format=image%2Fpng`
                 },
                 {
-                    title: 'T_CEC_meq_100g_RS_2020',
-                    id: 'T_CEC_meq_100g_RS_2020',
+                    title: 'B_SoilpH_RS_2020',
+                    id: 'B_SoilpH_RS_2020',
                     wms: `${process.env.GEOSERVER_URL}/wms`,
                     opacity: 0.80,
                     visibility: false,
                     legendShow: true,
                     legendStartOpen: false,
                     legendTitle: 'Opacity',
-                    legendText: ''
-                },
-                {
-                    title: 'T_MC_g_g_RS_2020',
-                    id: 'T_MC_g_g_RS_2020',
-                    wms: `${process.env.GEOSERVER_URL}/wms`,
-                    opacity: 0.80,
-                    visibility: false,
-                    legendShow: true,
-                    legendStartOpen: false,
-                    legendTitle: 'Opacity',
-                    legendText: ''
-                },
-                {
-                    title: 'T_OM_RS_2020',
-                    id: 'T_OM_RS_2020',
-                    wms: `${process.env.GEOSERVER_URL}/wms`,
-                    opacity: 0.80,
-                    visibility: false,
-                    legendShow: true,
-                    legendStartOpen: false,
-                    legendTitle: 'Opacity',
-                    legendText: ''
-                },
-                {
-                    title: 'T_SOC_RS_2020',
-                    id: 'T_SOC_RS_2020',
-                    wms: `${process.env.GEOSERVER_URL}/wms`,
-                    opacity: 0.80,
-                    visibility: false,
-                    legendShow: true,
-                    legendStartOpen: false,
-                    legendTitle: 'Opacity',
-                    legendText: ''
+                    legendText: '',
+                    legendImage: '/wms?request=GetMap&' +
+                        'layers=manual:B_SoilpH_RS_2020&' +
+                        'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
+                        `&width=640&height=480&srs=EPSG:3857&format=image%2Fpng`
                 }
             ]
         }
