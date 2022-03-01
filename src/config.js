@@ -13,9 +13,13 @@ export default {
                     title: 'Research Region',
                     id: 'manual:research-region',
                     type: 'wms',
-                    legendImage: '/wms?request=GetMap&' +
-                'layers=manual:research-region&bbox=-9828873.095744213,4848513.033479578,-9812933.65369004,4867025.709042344&' +
-                'width=640&height=480&srs=EPSG:3857&format=image%2Fpng'
+                    legendImage: '/wms?request=GetLegendGraphic&layer=manual:research-region&format=image%2Fpng'
+                },
+                {
+                    title: 'Research Region test',
+                    id: 'manual:research-region',
+                    type: 'wms',
+                    legendImage: '/wms?request=GetLegendGraphic&layer=manual:research-region&format=image%2Fpng'
                 }
             ],
             'Satellite Multispectral Image SR':[
