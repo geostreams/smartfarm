@@ -8,14 +8,24 @@ export default {
         zoom: 17,
         center: [-9828406.19,4866853.78],
         layers: {
-            'Research Region':[
+            'Research Sites':[
                 {
-                    title: 'Research Region',
-                    id: 'manual:research-region',
+                    title: 'Reifsteck Site',
+                    id: '621e7bcbe4b076cdad3c289c:reifsteck-site.zip_621e7bdfe4b076cdad3c28a2',
                     type: 'wms',
-                    legendImage: '/wms?request=GetMap&' +
-                'layers=manual:research-region&bbox=-9828873.095744213,4848513.033479578,-9812933.65369004,4867025.709042344&' +
-                'width=640&height=480&srs=EPSG:3857&format=image%2Fpng'
+                    legend: 'wms?request=GetLegendGraphic&layer=621e7bcbe4b076cdad3c289c:reifsteck-site.zip_621e7bdfe4b076cdad3c28a2&format=image%2Fpng'
+                },
+                {
+                    title: 'Reinhart Site',
+                    id: '621e7c05e4b076cdad3c28b3:reinhart-site.zip_621e7c0ce4b076cdad3c28b8',
+                    type: 'wms',
+                    legend: 'wms?request=GetLegendGraphic&layer=621e7c05e4b076cdad3c28b3:reinhart-site.zip_621e7c0ce4b076cdad3c28b8&format=image%2Fpng'
+                },
+                {
+                    title: 'Rund Site',
+                    id: '621e7c1ce4b076cdad3c28ca:rund-site.zip_621e7c25e4b076cdad3c28cf',
+                    type: 'wms',
+                    legend: 'wms?request=GetLegendGraphic&layer=621e7c1ce4b076cdad3c28ca:rund-site.zip_621e7c25e4b076cdad3c28cf&format=image%2Fpng'
                 }
             ],
             'Satellite Multispectral Image SR':[
@@ -23,19 +33,13 @@ export default {
                     title: 'SR 09-30-2020',
                     id: 'manual:SatelliteImage.Reifsteck.2020.09.30.SR',
                     type: 'wms',
-                    legendImage: '/wms?request=GetMap&' +
-                'layers=manual:SatelliteImage.Reifsteck.2020.09.30.SR&' +
-                'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
-                '&width=640&height=480&srs=EPSG:3857&format=image%2Fpng'
+                    legend: 'wms?request=GetLegendGraphic&layer=manual:research-region&format=image%2Fpng'
                 },
                 {
                     title: 'SR 09-01-2020',
                     id: 'manual:SatelliteImage.Reifsteck.2020.09.01.SR',
                     type: 'wms',
-                    legendImage: '/wms?request=GetMap&' +
-                'layers=manual:SatelliteImage.Reifsteck.2020.09.01.SR&' +
-                'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
-                '&width=640&height=480&srs=EPSG:3857&format=image%2Fpng'
+                    legend: 'wms?request=GetLegendGraphic&layer=manual:research-region&format=image%2Fpng'
                 }
             ],
             'Satellite Multispectral Image NDVI': [
@@ -43,19 +47,107 @@ export default {
                     title: 'NDVI 09-30-2020',
                     id: 'manual:SatelliteImage.Reifsteck.2020.09.30.NDVI',
                     type: 'wms',
-                    legendImage: '/wms?request=GetMap&' +
-                'layers=manual:SatelliteImage.Reifsteck.2020.09.30.NDVI&' +
-                'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
-                '&width=640&height=480&srs=EPSG:3857&format=image%2Fpng'
+                    legend: 'wms?request=GetLegendGraphic&layer=manual:research-region&format=image%2Fpng'
                 },
                 {
                     title: 'NDVI 09-01-2020',
                     id: 'manual:SatelliteImage.Reifsteck.2020.09.01.NDVI',
                     type: 'wms',
-                    legendImage: '/wms?request=GetMap&' +
-                'layers=manual:SatelliteImage.Reifsteck.2020.09.01.NDVI&' +
-                'bbox=-9828974.37528645,4866229.991661974,-9827597.817471862,4867541.604250039' +
-                `&width=640&height=480&srs=EPSG:3857&format=image%2Fpng`
+                    legend: 'wms?request=GetLegendGraphic&layer=manual:research-region&format=image%2Fpng'
+                }
+            ],
+            'Cation Exchange Capacity (meg/100g)':[
+                {
+                    title: 'Top Layer CEC',
+                    id: 'manual:T_CEC_meq_100g_RS_2020',
+                    type: 'wms',
+                    legend: 'wms?request=GetLegendGraphic&layer=manual:T_CEC_meq_100g_RS_2020&format=image%2Fpng'
+                },
+                {
+                    title: 'Middle Layer CEC',
+                    id: 'manual:M_CEC_meq_100g_RS_2020',
+                    type: 'wms',
+                    legend: 'wms?request=GetLegendGraphic&layer=manual:M_CEC_meq_100g_RS_2020&format=image%2Fpng'
+                },
+                {
+                    title: 'Bottom Layer CEC',
+                    id: 'manual:B_CEC_meq_100g_RS_2020',
+                    type: 'wms',
+                    legend: 'wms?request=GetLegendGraphic&layer=manual:B_CEC_meq_100g_RS_2020&format=image%2Fpng'
+                }
+            ],
+            'Moisture Content (g/g)':[
+                {
+                    title: 'Top Layer MC',
+                    id: 'manual:T_MC_g_g_RS_2020',
+                    type: 'wms',
+                    legend: 'wms?request=GetLegendGraphic&layer=manual:T_MC_g_g_RS_2020&format=image%2Fpng'
+                },
+                {
+                    title: 'Middle Layer MC',
+                    id: 'manual:M_MC_g_g_RS_2020',
+                    type: 'wms',
+                    legend: 'wms?request=GetLegendGraphic&layer=manual:M_MC_g_g_RS_2020&format=image%2Fpng'
+                },
+                {
+                    title: 'Bottom Layer MC',
+                    id: 'manual:B_MC_g_g_RS_2020',
+                    type: 'wms',
+                    legend: 'wms?request=GetLegendGraphic&layer=manual:B_MC_g_g_RS_2020&format=image%2Fpng'
+                }
+            ],
+            'Organic Matter (%)':[
+                {
+                    title: 'Top Layer OM',
+                    id: 'manual:T_OM_RS_2020',
+                    type: 'wms',
+                    legend: 'wms?request=GetLegendGraphic&layer=manual:T_OM_RS_2020&format=image%2Fpng'
+                },
+                {
+                    title: 'Middle Layer OM',
+                    id: 'manual:M_OM_RS_2020',
+                    type: 'wms',
+                    legend: 'wms?request=GetLegendGraphic&layer=manual:M_OM_RS_2020&format=image%2Fpng'
+                },
+                {
+                    title: 'Bottom Layer OM',
+                    id: 'manual:B_OM_RS_2020',
+                    type: 'wms',
+                    legend: 'wms?request=GetLegendGraphic&layer=manual:B_OM_RS_2020&format=image%2Fpng'
+                }
+            ],
+            'Soil Organic Carbon (%)':[
+                {
+                    title: 'Top Layer SOC',
+                    id: 'manual:T_SOC_RS_2020',
+                    type: 'wms',
+                    legend: 'wms?request=GetLegendGraphic&layer=manual:T_SOC_RS_2020&format=image%2Fpng'
+                },
+                {
+                    title: 'Middle Layer SOC',
+                    id: 'manual:M_SOC_RS_2020',
+                    type: 'wms',
+                    legend: 'wms?request=GetLegendGraphic&layer=manual:M_SOC_RS_2020&format=image%2Fpng'
+                }
+            ],
+            'Soil pH':[
+                {
+                    title: 'Top Layer Soil pH',
+                    id: 'manual:T_SoilpH_RS_2020',
+                    type: 'wms',
+                    legend: 'wms?request=GetLegendGraphic&layer=manual:T_SoilpH_RS_2020&format=image%2Fpng'
+                },
+                {
+                    title: 'Middle Layer Soil pH',
+                    id: 'manual:M_SoilpH_RS_2020',
+                    type: 'wms',
+                    legend: 'wms?request=GetLegendGraphic&layer=manual:M_SoilpH_RS_2020&format=image%2Fpng'
+                },
+                {
+                    title: 'Bottom Layer Soil pH',
+                    id: 'manual:B_SoilpH_RS_2020',
+                    type: 'wms',
+                    legend: 'wms?request=GetLegendGraphic&layer=manual:B_SoilpH_RS_2020&format=image%2Fpng'
                 }
             ]
         }
