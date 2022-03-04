@@ -30,30 +30,32 @@ export default {
             ],
             'Satellite Multispectral Image SR':[
                 {
-                    title: 'SR 09-30-2020',
-                    id: 'manual:SatelliteImage.Reifsteck.2020.09.30.SR',
-                    type: 'wms',
-                    legend: 'wms?request=GetLegendGraphic&layer=manual:research-region&format=image%2Fpng'
+                    title: 'SR 09-20-2020',
+                    id: '601d8c3fe4b0affc633634ad:SatelliteImage.Reifsteck.2020.09.20.SR.tif_601d8d40e4b0affc6336376e',
+                    type: 'wms'
+                    // ,
+                    // legend: 'wms?request=GetLegendGraphic&layer=601d8c3fe4b0affc633634ad:SatelliteImage.Reifsteck.2020.09.20.SR.tif_601d8d40e4b0affc6336376e&format=image%2Fpng'
                 },
                 {
-                    title: 'SR 09-01-2020',
-                    id: 'manual:SatelliteImage.Reifsteck.2020.09.01.SR',
-                    type: 'wms',
-                    legend: 'wms?request=GetLegendGraphic&layer=manual:research-region&format=image%2Fpng'
+                    title: 'SR 08-22-2020',
+                    id: '601d8c3fe4b0affc633634ad:SatelliteImage.Reifsteck.2020.08.22.SR.tif_601d8d40e4b0affc6336375a',
+                    type: 'wms'
+                    // ,
+                    // legend: 'wms?request=GetLegendGraphic&layer=601d8c3fe4b0affc633634ad:SatelliteImage.Reifsteck.2020.08.22.SR.tif_601d8d40e4b0affc6336375a&format=image%2Fpng'
                 }
             ],
             'Satellite Multispectral Image NDVI': [
                 {
-                    title: 'NDVI 09-30-2020',
-                    id: 'manual:SatelliteImage.Reifsteck.2020.09.30.NDVI',
+                    title: 'NDVI 09-20-2020',
+                    id: '601d8dcde4b0affc633642ac:SatelliteImage.Reifsteck.2020.09.20.NDVI.tif_601d8e4de4b0affc63364784',
                     type: 'wms',
-                    legend: 'wms?request=GetLegendGraphic&layer=manual:research-region&format=image%2Fpng'
+                    legend: 'wms?request=GetLegendGraphic&layer=601d8dcde4b0affc633642ac:SatelliteImage.Reifsteck.2020.09.20.NDVI.tif_601d8e4de4b0affc63364784&format=image%2Fpng'
                 },
                 {
-                    title: 'NDVI 09-01-2020',
-                    id: 'manual:SatelliteImage.Reifsteck.2020.09.01.NDVI',
+                    title: 'NDVI 08-22-2020',
+                    id: '601d8dcde4b0affc633642ac:SatelliteImage.Reifsteck.2020.08.22.NDVI.tif_601d8e4de4b0affc63364706',
                     type: 'wms',
-                    legend: 'wms?request=GetLegendGraphic&layer=manual:research-region&format=image%2Fpng'
+                    legend: 'wms?request=GetLegendGraphic&layer=601d8dcde4b0affc633642ac:SatelliteImage.Reifsteck.2020.08.22.NDVI.tif_601d8e4de4b0affc63364706&format=image%2Fpng'
                 }
             ],
             'Cation Exchange Capacity (meg/100g)':[
