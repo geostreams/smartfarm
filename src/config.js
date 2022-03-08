@@ -33,15 +33,11 @@ export default {
                     title: 'SR 09-20-2020',
                     id: '601d8c3fe4b0affc633634ad:SatelliteImage.Reifsteck.2020.09.20.SR.tif_601d8d40e4b0affc6336376e',
                     type: 'wms'
-                    // ,
-                    // legend: 'wms?request=GetLegendGraphic&layer=601d8c3fe4b0affc633634ad:SatelliteImage.Reifsteck.2020.09.20.SR.tif_601d8d40e4b0affc6336376e&format=image%2Fpng'
                 },
                 {
                     title: 'SR 08-22-2020',
                     id: '601d8c3fe4b0affc633634ad:SatelliteImage.Reifsteck.2020.08.22.SR.tif_601d8d40e4b0affc6336375a',
                     type: 'wms'
-                    // ,
-                    // legend: 'wms?request=GetLegendGraphic&layer=601d8c3fe4b0affc633634ad:SatelliteImage.Reifsteck.2020.08.22.SR.tif_601d8d40e4b0affc6336375a&format=image%2Fpng'
                 }
             ],
             'Satellite Multispectral Image NDVI': [
