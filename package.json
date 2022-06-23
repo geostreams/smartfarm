@@ -1,6 +1,6 @@
 {
   "name": "smartfarm-geodashboard",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "main": "src/index.jsx",
   "scripts": {
     "link:geostreams": "yarn link @geostreams/core && yarn link @geostreams/geostreaming && yarn link @geostreams/core__old",
