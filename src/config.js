@@ -5,8 +5,8 @@ export default {
         clusterDistance: 45,
         maxZoom: 17,
         minZoom: 5.5,
-        zoom: 17,
-        center: [-9828406.19,4866853.78],
+        zoom: 12.5,
+        center: [-9819198.52,4859348.68],
         layers: {
             'Research Sites':[
                 {

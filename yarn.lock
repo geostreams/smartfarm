@@ -1027,23 +1027,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@geostreams/core@3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@geostreams/core/-/core-3.9.2.tgz#f1d508ab968534eef6565b4fc3517cc691cc9398"
-  integrity sha512-Tknraw9pTjcoYLD9lV8XGt66hdq8nTALAyvEwhva1nd8qQfqCXtjOb7Coi2SVeUKW09bW1MAD082nCzl0FApCA==
-  dependencies:
-    clsx "^1.1.1"
-    d3 "~5.16.0"
-    html2canvas "^1.0.0-rc.7"
-    jspdf "^2.3.1"
-    ol "~6.5.0"
-    ol-ext "~3.1.14"
-    ol-layerswitcher "~3.8.0"
-
-"@geostreams/core@^3.6.0":
-  version "3.6.2"
-  resolved "https://registry.yarnpkg.com/@geostreams/core/-/core-3.6.2.tgz#9e53048a2c635a30e322cfaabfae51cad5b09aee"
-  integrity sha512-3nYkgd6VVFn9QALWCLFsx97vlFBQMirYcD8bvLpE8NeqMdrsgkpTvZh5tQir+S28fsnxCl4pnKA2kNKS1gJvIA==
+"@geostreams/core@3.9.4", "@geostreams/core@^3.9.2":
+  version "3.9.4"
+  resolved "https://registry.yarnpkg.com/@geostreams/core/-/core-3.9.4.tgz#14d6d294866d0c91f0b794208bf420c749f210b9"
+  integrity sha512-z2QFWB7vz23WiKNZsuuqP36pbiulCWkT4yt4An6D8T91gtOIbEJdGsCQzgXNB7HUcUcv1P6zY7dJVyWV5wOSMw==
   dependencies:
     clsx "^1.1.1"
     d3 "~5.16.0"
@@ -1060,13 +1047,13 @@
   dependencies:
     "@babel/eslint-parser" "^7.13.14"
 
-"@geostreams/geostreaming@3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@geostreams/geostreaming/-/geostreaming-3.9.2.tgz#004b647cc130dd45520f0ba02ef8b49d57e9cc67"
-  integrity sha512-khWJlrEm6i+BzHaV97q5BoM14XodqtgIs/PqLSg/7nW0Gsa2gFevv+CRrJoB+HIujs4JZIR/UEx/6UrHmUSDsw==
+"@geostreams/geostreaming@3.9.4":
+  version "3.9.4"
+  resolved "https://registry.yarnpkg.com/@geostreams/geostreaming/-/geostreaming-3.9.4.tgz#bc760f1044c6738e5ad306a9b5c0b2a1d08cebef"
+  integrity sha512-ZVE28419sLhlBXybKHHkTIc6xkqLaee30f5Gl10Fvh2WWbsSm8QunAffYiVQVk6QJUx12rhFVr/X0RVM5T7O0A==
   dependencies:
     "@date-io/date-fns" "1.3.13"
-    "@geostreams/core" "^3.6.0"
+    "@geostreams/core" "^3.9.2"
     "@material-ui/pickers" "^3.3.10"
     clsx "^1.1.1"
     d3 "~5.16.0"
