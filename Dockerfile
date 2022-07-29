@@ -23,6 +23,7 @@ RUN yarn build
 FROM nginx:stable-alpine
 RUN rm /etc/nginx/conf.d/default.conf
 COPY docker/nginx.conf /etc/nginx/conf.d
+COPY docker/.htpasswd /etc/nginx/.htpasswd
 
 COPY --from=build /tmp/smartfarm/build /usr/share/nginx/html
 EXPOSE 80
