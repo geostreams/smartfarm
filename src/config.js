@@ -10,19 +10,19 @@ export default {
         layers: {
             'Research Sites':[
                 {
-                    title: 'Reifsteck Site',
+                    title: 'Bondville Site',
                     id: '621e7bcbe4b076cdad3c289c:reifsteck-site.zip_621e7bdfe4b076cdad3c28a2',
                     type: 'wms',
                     legend: 'wms?request=GetLegendGraphic&layer=621e7bcbe4b076cdad3c289c:reifsteck-site.zip_621e7bdfe4b076cdad3c28a2&format=image%2Fpng'
                 },
                 {
-                    title: 'Reinhart Site',
+                    title: 'Villa Grove Site',
                     id: '621e7c05e4b076cdad3c28b3:reinhart-site.zip_621e7c0ce4b076cdad3c28b8',
                     type: 'wms',
                     legend: 'wms?request=GetLegendGraphic&layer=621e7c05e4b076cdad3c28b3:reinhart-site.zip_621e7c0ce4b076cdad3c28b8&format=image%2Fpng'
                 },
                 {
-                    title: 'Rund Site',
+                    title: 'Pesotum Site',
                     id: '621e7c1ce4b076cdad3c28ca:rund-site.zip_621e7c25e4b076cdad3c28cf',
                     type: 'wms',
                     legend: 'wms?request=GetLegendGraphic&layer=621e7c1ce4b076cdad3c28ca:rund-site.zip_621e7c25e4b076cdad3c28cf&format=image%2Fpng'
